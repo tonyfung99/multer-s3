@@ -136,7 +136,8 @@ S3Storage.prototype._handleFile = function (req, file, cb) {
         contentType: opts.contentType,
         metadata: opts.metadata,
         location: result.Location,
-        etag: result.ETag
+        etag: result.ETag,
+        file: file
       })
     })
   })
